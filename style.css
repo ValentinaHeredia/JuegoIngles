@@ -1,48 +1,82 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
-h1{
-    color: rgb(123, 32, 184);
-    font-size: 2em;
-}
-
-.juegoTipeo{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100vw;
-    background-color: rgb(212, 165, 255);
+    width: 100%;
 }
 
-.caja{
+.subConteiner{
     display: flex;
     flex-direction: row;
-    width: 80%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-.palabraActual{
-    width: 300px;
-    height: 100px;
-    background-color: aliceblue;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 5px ;
-}
-.siguientePalabra{
-    width: 200px;
+.boton{
+    background-color: #E0C7FF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
     height: 50px;
-    background-color: aliceblue;
-    border-radius: 10px;
+    width: 170px;
+    font-size: 1.5em;
+}
+
+.contador-tiempo{
+    background-color: #E0C7FF;
+    height: 50px;
+    width: 80%;
+    border-radius: 15px;
+    justify-content: space-evenly;
+}
+
+.contador-tiempo p{
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.palabrasBox{
+    width: 100%;
+    justify-content: space-evenly;
+}
+.palabraActual{
+    background-color: #E0C7FF;
+    height: 200px;
+    width: 45%;
+    border-radius: 15px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
+}
+
+.palabraSiguiente{
+    background-color: #E0C7FF;
+    height: 150px;
+    width: 25%;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.palabraSiguiente div p{
+    font-size: 1.2em;
+    color: #ffffff;
+
+}
+
+.palabras{
+    font-size: 2em;
+    color: #ffffff;
 }

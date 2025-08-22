@@ -7,21 +7,36 @@
     <title>Juego de tipeo</title>
 </head>
 <body>
-    <div class="juegoTipeo">
-        <h1>Juego de tipeo</h1>
-        <div class="caja">
-            <div class="siguientePalabra">
-                <div id="proxima-palabra"></div>
+    <main class="juegoTipeo">
+        <h1>Typing game</h1>
+        <div class="container">
+            <div>
+                <button class="boton">Start</button>
             </div>
-            <div class="palabraActual">
-                <div id="palabra-mostrada"></div>
-                <input type="text" id="ingreso-palabra">
+            <div class="subConteiner contador-tiempo">
+                <div id="contador">
+                    <p>Time: <span id="tiempo-restante">00:00</span></p>
+                </div>
+                <div>
+                    <p>Score: <span id="palabras-typed">0</span></p>
+                </div>
             </div>
-
+            <div class="subConteiner palabrasBox">
+                <div class="palabraActual">
+                    <div  id="palabra-mostrada" class="palabras"></div>
+                    <input type="text" id="ingreso-palabra">
+                </div>
+                <div class="palabraSiguiente">
+                    <div>
+                        <p>Siguiente:</p>
+                    </div>
+                    <div>
+                        <div id="proxima-palabra" class="palabras"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
-    </div>
+    </main>
 
 
     <script src="palabras.js"></script>

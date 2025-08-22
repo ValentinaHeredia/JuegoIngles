@@ -21,7 +21,7 @@ function mostrarNuevaPalabra() {
 
   // Muestra la palabra actual y la siguiente en sus respectivos divs
   elementoPalabra.textContent = palabraActual;
-  elementoProximaPalabra.textContent = "Siguiente: " + proximaPalabra;
+  elementoProximaPalabra.textContent = proximaPalabra;
 
   elementoInput.value = "";
 }
